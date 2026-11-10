@@ -7,7 +7,7 @@ set -euo pipefail
 # ---- Defaults (edit if your paths move) ------------------------------------
 
 DEFAULT_GEARGAME_CANDIDATES=(
-    "/run/media/reda/NVME/Decompiled/Gears 3 Jacinto v1.1.1/GearGame"
+    "/path/to/Gears 3 Jacinto v1.1.1/GearGame"
     "$PWD/../GearGame"
     "$PWD/GearGame"
 )
@@ -15,7 +15,7 @@ DEFAULT_GEARGAME_CANDIDATES=(
 DEFAULT_PACK_ROOTS=(
     "$PWD"
     "$HOME/Downloads/Gears 3 Jacinto v1.1.1"
-    "/run/media/reda/NVME/Decompiled/Gears 3 Jacinto v1.1.1"
+    "/path/to/Decompiled/Gears 3 Jacinto v1.1.1"
 )
 
 # ---- Utilities -------------------------------------------------------------
@@ -210,7 +210,7 @@ Env:  GEARGAME, PACK_ROOT, FORCE=1
 Examples:
   gears3-hd.sh status
   gears3-hd.sh install all
-  gears3-hd.sh install 2 -g "/run/media/reda/NVME/Decompiled/Gears 3 Jacinto v1.1.1/GearGame"
+  gears3-hd.sh install 2 -g "/path/to/NVME/Decompiled/Gears 3 Jacinto v1.1.1/GearGame"
   gears3-hd.sh rollback
 EOF
 }
